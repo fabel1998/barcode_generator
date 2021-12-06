@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Генерация бар-кода</title>
+	</head>
+	<body>
+		<h2>Генерация бар-кода</h2>
+		<form action="" method="post">
+		{{ form.hidden_tag() }}
+        <label>
+          {{form.brand()}}
+          <div >Бренд</div>
+        </label>
+		<label>
+          {{form.article()}}
+          <div >Артикль</div>
+        </label>
+		<label>
+          {{form.size()}}
+          <div class="label-text">Размер</div>
+        </label>
+        <label>
+          {{form.weigth()}}
+          <div >Вес</div>
+        </label>
+		<label>
+          {{form.barcode()}}
+          <div >Штрих-код</div>
+        </label>
+        <input type="submit" value="Отправить">
+      </form>
+		<img id="barcode"/>
+	</body>
+</html>
